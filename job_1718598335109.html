@@ -1,0 +1,206 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原宿サロン HARA STAFF 募集要項</title>
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://lh3.googleusercontent.com/d/1JIbjF2Y3AL6POFjg2V5bwdJikocuFSVQ') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background: url('https://lh3.googleusercontent.com/d/11LrE4L1QWgATYBZWv7tjAuYDie8mhdJQ') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 2em;
+            position: relative;
+            z-index: 2;
+        }
+        section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        section:hover {
+            background-color: rgba(230, 230, 230, 0.8);
+        }
+        section h2 {
+            color: #444;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ff4081; /* サロンのテーマカラー */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const options = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>原宿サロン HARA STAFF 募集要項</h1>
+        </header>
+        <section class="fade-in">
+            <h2>勤務地</h2>
+            <ul>
+                <li>原宿店: 東京都渋谷区神宮前1-19-11</li>
+                <li>表参道店: 東京都港区南青山5-6-24</li>
+                <li>銀座店: 東京都中央区銀座2-7-18</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>休日</h2>
+            <ul>
+                <li><i class="fas fa-calendar-alt"></i> 週休2日</li>
+                <li><i class="fas fa-sun"></i> 夏季休暇</li>
+                <li><i class="fas fa-snowflake"></i> 年末年始休暇</li>
+                <li><i class="fas fa-plane"></i> 有給休暇</li>
+                <li><i class="fas fa-heart"></i> 慶弔休暇</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>給与</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>職種</th>
+                        <th>給与</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>スタイリスト</td>
+                        <td>月給30万円〜</td>
+                    </tr>
+                    <tr>
+                        <td>アシスタント</td>
+                        <td>月給20万円〜</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="fade-in">
+            <h2>待遇</h2>
+            <ul>
+                <li><i class="fas fa-bus"></i> 交通費全額支給</li>
+                <li><i class="fas fa-arrow-up"></i> 昇給制度あり</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> 講習手当あり</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>福利厚生</h2>
+            <ul>
+                <li><i class="fas fa-shield-alt"></i> 社保完備</li>
+                <li><i class="fas fa-baby"></i> 産休育休</li>
+                <li><i class="fas fa-book-open"></i> 社内教育制度</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>求人内容</h2>
+            <p>原宿で一番人気のサロン「HARA」は、スタイリストおよびアシスタントを募集しています。当サロンでは、高い技術力とお客様へのおもてなしを大切にしており、働きやすい環境づくりに力を入れています。私たちは、成長意欲のある方、チームワークを大切にできる方、そして美容に情熱を持っている方を求めています。</p>
+        </section>
+        <footer>
+            <p>&copy; 2023 原宿サロン HARA. All Rights Reserved.</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
