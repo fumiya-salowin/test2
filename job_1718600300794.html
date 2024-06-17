@@ -1,0 +1,209 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALOWIN SHIBUYA - 求人</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://lh3.googleusercontent.com/d/19WK1_4YTSgBJIW2U5fuqfM4DClQQvtF-') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.3);
+            flex: 1;
+        }
+
+        header {
+            background: url('https://lh3.googleusercontent.com/d/1wwsvML5XcVWUau_NuTQBlLqlwTS4YeVy') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2em;
+            z-index: 1;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: white;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .section:hover {
+            background-color: #f0f0f0;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f8f8f8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        footer .icon {
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer .icon:hover {
+            color: #FF6347;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .section {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>SALOWIN SHIBUYA STAFF 募集要項</h1>
+        </header>
+
+        <div class="section" id="location">
+            <h2>勤務地</h2>
+            <ul>
+                <li>東京都渋谷区道玄坂2-11-1</li>
+                <li>東京都港区南青山5-10-19</li>
+                <li>東京都新宿区新宿3-18-1</li>
+            </ul>
+        </div>
+
+        <div class="section" id="holidays">
+            <h2>休日</h2>
+            <ul>
+                <li><i class="fa fa-calendar-alt icon"></i>週休2日</li>
+                <li><i class="fa fa-sun icon"></i>夏季休暇</li>
+                <li><i class="fa fa-snowflake icon"></i>年末年始休暇</li>
+                <li><i class="fa fa-check icon"></i>有給休暇</li>
+                <li><i class="fa fa-heart icon"></i>慶弔休暇</li>
+            </ul>
+        </div>
+
+        <div class="section" id="salary">
+            <h2>給与</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>職種</th>
+                        <th>給与</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>スタイリスト</td>
+                        <td>月給25万円〜</td>
+                    </tr>
+                    <tr>
+                        <td>アシスタント</td>
+                        <td>月給20万円〜</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="benefits">
+            <h2>待遇</h2>
+            <ul>
+                <li><i class="fa fa-bus icon"></i>交通費全額支給</li>
+                <li><i class="fa fa-level-up-alt icon"></i>昇給制度あり</li>
+                <li><i class="fa fa-chalkboard-teacher icon"></i>講習手当あり</li>
+            </ul>
+        </div>
+
+        <div class="section" id="welfare">
+            <h2>福利厚生</h2>
+            <ul>
+                <li><i class="fa fa-shield-alt icon"></i>社保完備</li>
+                <li><i class="fa fa-baby icon"></i>産休育休</li>
+                <li><i class="fa fa-graduation-cap icon"></i>社内教育制度</li>
+            </ul>
+        </div>
+
+        <div class="section" id="job-details">
+            <h2>求人内容</h2>
+            <p>
+                渋谷で人気のシェアサロン「SALOWIN SHIBUYA」では、新たなスタッフを募集しています。当サロンは、最新の設備と洗練されたデザインで、お客様に最高の美容体験を提供しています。
+                働きやすい環境と充実した福利厚生を完備しており、美容業界でキャリアを築きたい方に最適です。
+                明るく、前向きな方、そして何よりお客様を第一に考えられる方を求めています。ぜひ、私たちと一緒に働きませんか？
+            </p>
+        </div>
+
+        <footer>
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2023 SALOWIN SHIBUYA All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
