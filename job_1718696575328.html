@@ -1,0 +1,180 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALOWIN池袋 求人広告</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            background: url('https://lh3.googleusercontent.com/d/146swZbXSRHo2CI0xDZL7PxWx_ypmxIdr') no-repeat center center fixed;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow-x: hidden;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+        }
+        header {
+            background: url('https://lh3.googleusercontent.com/d/19dFHAXX6RjTrP-OZf8LFe4RBDaHaY8SQ') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            position: relative;
+            font-size: 2em;
+        }
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        ul, table {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li, table th, table td {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table th {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .hover-effect:hover {
+            background-color: rgba(255, 255, 255, 1);
+            transition: background-color 0.3s ease-in-out;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        footer a:hover {
+            color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SALOWIN池袋 STAFF 募集要項</h1>
+    </header>
+    <div class="overlay">
+        <section class="fade-in">
+            <h2>勤務地</h2>
+            <ul>
+                <li class="hover-effect">東京都豊島区南池袋1-28-2 池袋パルコ店</li>
+                <li class="hover-effect">東京都豊島区東池袋1-30-6 池袋サンシャイン通り店</li>
+                <li class="hover-effect">東京都豊島区西池袋3-28-14 池袋マルイ店</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>休日</h2>
+            <ul>
+                <li class="hover-effect"><i class="fas fa-calendar-alt icon"></i>週休2日</li>
+                <li class="hover-effect"><i class="fas fa-sun icon"></i>夏季休暇</li>
+                <li class="hover-effect"><i class="fas fa-snowflake icon"></i>年末年始休暇</li>
+                <li class="hover-effect"><i class="fas fa-umbrella-beach icon"></i>有給休暇</li>
+                <li class="hover-effect"><i class="fas fa-hand-holding-heart icon"></i>慶弔休暇</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>給与</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>職種</th>
+                        <th>給与</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover-effect">
+                        <td>スタイリスト</td>
+                        <td>30万円〜</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td>アシスタント</td>
+                        <td>20万円〜</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="fade-in">
+            <h2>待遇</h2>
+            <ul>
+                <li class="hover-effect"><i class="fas fa-bus icon"></i>交通費全額支給</li>
+                <li class="hover-effect"><i class="fas fa-arrow-up icon"></i>昇給制度あり</li>
+                <li class="hover-effect"><i class="fas fa-chalkboard-teacher icon"></i>講習手当あり</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>福利厚生</h2>
+            <ul>
+                <li class="hover-effect"><i class="fas fa-shield-alt icon"></i>社保完備</li>
+                <li class="hover-effect"><i class="fas fa-baby icon"></i>産休育休</li>
+                <li class="hover-effect"><i class="fas fa-graduation-cap icon"></i>社内教育制度</li>
+            </ul>
+        </section>
+        <section class="fade-in">
+            <h2>求人内容</h2>
+            <p>SALOWIN池袋ではフリーランス美容師を募集しています。<br>アットホームな雰囲気で働きやすい環境が整っています。<br>私たちと一緒に成長し、お客様に最高のサービスを提供しましょう。</p>
+        </section>
+    </div>
+    <footer>
+        <p>Follow us on:</p>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
